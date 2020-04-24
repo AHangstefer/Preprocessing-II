@@ -168,6 +168,18 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+header nav {
+  display: flex;
+  border: red solid 2px;
+}
+header nav a {
+  display: flex;
+  justify-content: flex-end;
+  border: blue solid 2px;
+}
+header h1 {
+  border: green 2px solid;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
