@@ -170,14 +170,21 @@ img {
 }
 header nav {
   display: flex;
+  align-items: center;
+  justify-content: flex-end;
   border: red solid 2px;
+  padding: 3%;
 }
 header nav a {
-  display: flex;
-  justify-content: flex-end;
   border: blue solid 2px;
+  padding-inline-end: 5%;
+  font-size: 1.6rem;
+  text-decoration: none;
+  font: #212529;
+  font-weight: bolder;
 }
-header h1 {
+header nav #headertitle {
+  padding: 0% 40% 0% 0%;
   border: green 2px solid;
 }
 .footer {
