@@ -2,27 +2,26 @@
   .text();
 
   .content-welcome{
-      border: blue dashed 2px;
+      border-bottom: @silver .3rem dashed;
       
   
    
-    .img-content{
-      border: red solid 2px;
-    }
-
-  
-    h2{
+   h2{
       padding-top: 2%;
-      border: green solid 2px;
+      padding-left: 1%;
+      
 
     }
 
     p{
       border-bottom:@silver dashed .2srem;
+      padding-left: 1%;
+      padding-right: 0;
+      
     }
 
       
-  }    
+  }   
     
  
  
@@ -41,6 +40,8 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
+      padding-left: 1%;
+    
 
       @media @mobile{
         width: 95%;
@@ -82,10 +83,14 @@
       padding-left: 0;
 
       @media @mobile{
-        width: 100%;
         .center();
+        width: 100%;
       }
     }
+
+     
+      
+    
   }
 
   .content-destination {
@@ -96,6 +101,15 @@
       width: 100%;
     }
 
+    h2{
+      padding-left: 1%;
+      padding-right: 0;
+    }
+
+    p{
+      padding-left: 1%;
+      padding-right: 0;
+    }
     img {
       border-radius: 10px;
     }
@@ -106,6 +120,7 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    
 
     @media @mobile{
       flex-direction: column;
@@ -118,24 +133,22 @@
        @media @mobile{
          padding-left: 10%;
          padding-right: 4%;
+         display: flex;
+         flex-direction: column;
+         width: 95%;
        }
 
-      @media @mobile{
-      display: flex;
-      flex-direction: column;
-      }
-
-      @media @mobile{
-        width: 95%;
-      }
+      
     
 
       .btn{
         .button();
+               
 
         @media @mobile{
           align-self: center;
-          text-align: center;
+          width: 95%;
+          
           
         }
         
