@@ -168,24 +168,36 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-header nav {
+header {
+  border: green 2px solid;
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  border: red solid 2px;
-  padding: 3%;
+  flex-direction: row;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 800px;
 }
-header nav a {
+header .title-text {
+  border: purple 2px solid;
+  text-align: center;
+  white-space: nowrap;
+}
+header .title-text h1 {
+  border: 3px solid orange;
+}
+header .navbar {
+  border: #610b0b 2px solid;
+  display: flex;
+  white-space: nowrap;
+  align-self: center;
+  flex: 1;
+  justify-content: flex-end;
+}
+header .navbar a {
   border: blue solid 2px;
-  padding-inline-end: 5%;
   font-size: 1.6rem;
   text-decoration: none;
   font: #212529;
   font-weight: bolder;
-}
-header nav #headertitle {
-  padding: 0% 40% 0% 0%;
-  border: green 2px solid;
 }
 .footer {
   width: 100%;
