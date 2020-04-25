@@ -8,7 +8,10 @@ header{
     max-width: 800px;
     border-bottom: @navigation-border;
     
-    
+      @media @mobile{
+        flex-direction: column;
+         
+      }
     
     
      .title-text{
@@ -21,7 +24,11 @@ header{
         
         h1{
             border: 3px solid orange;
-            .text()
+            .text();
+
+            @media @mobile{
+                padding: 3%;
+            }
             
         }
     }
@@ -35,7 +42,10 @@ header{
         justify-content: flex-end;
         
         
-        
+        @media @mobile{
+            width: 100%;
+            justify-content: space-evenly;
+        }
         
 
          a{
