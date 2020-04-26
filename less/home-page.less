@@ -15,8 +15,7 @@
 
     p{
       border-bottom:@silver dashed .2srem;
-      padding-left: 1%;
-      padding-right: 0;
+     .padding();
       
     }
 
@@ -53,13 +52,19 @@
       width: 48%;
       padding-left: 1%;
 
-      @media @mobile{
-        width: 100%;
-        .center();
+        @media @mobile{
+          width: 100%;
+          
       }
 
       img {
         border-radius: 10px;
+
+            @media @mobile{
+              width: 100%;
+            }
+
+         
       }
     }
   }
@@ -74,16 +79,13 @@
 
 
     .text-content {
-      padding-left: 1%;
-      padding-right: 0;
+      .padding();
     }
 
     .img-content {
-      padding-right: 1%;
-      padding-left: 0;
+      .padding();
 
       @media @mobile{
-        .center();
         width: 100%;
       }
     }
@@ -102,13 +104,11 @@
     }
 
     h2{
-      padding-left: 1%;
-      padding-right: 0;
+      .padding();
     }
 
     p{
-      padding-left: 1%;
-      padding-right: 0;
+      .padding();
     }
     img {
       border-radius: 10px;
